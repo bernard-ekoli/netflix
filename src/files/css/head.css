@@ -1,0 +1,313 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#head {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#firstHead {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    /* Ensures it takes at least the full viewport height */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#firstHead::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../assets/img/NG-en-20241202-TRIFECTA-perspective_80edf326-12ff-4497-b4ec-062d378a680b_large.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    filter: blur(20px);
+    z-index: -2;
+}
+
+#firstHead::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    z-index: -1;
+}
+
+#firstHead>* {
+    position: relative;
+    z-index: 1;
+    color: white;
+}
+
+/* Additional styling for other elements */
+
+
+#netLogo {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    padding: 40px 30px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#nlDiv {
+    width: 150px;
+    height: auto;
+    padding: 5px 2px;
+}
+
+#nlDiv>img {
+    width: 100%;
+    height: auto;
+}
+
+#nlButton>button {
+    padding: 10px 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#netImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#netImg>div {
+    position: relative;
+    height: 350px;
+    width: 100%;
+    border-radius: 10px;
+    border-top: 2px solid white;
+    border-left: 2px solid white;
+    box-shadow: 2px 2px 15px black;
+    background-color: #000;
+    z-index: 999;
+    display: flex;
+    padding-bottom: 30px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+#netImg>div::before {
+    content: "";
+    position: absolute;
+    background-image: url('../../assets/img/NG-en-20241202-TRIFECTA-perspective_80edf326-12ff-4497-b4ec-062d378a680b_large.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -2;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+#netImg>div::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.712);
+    z-index: -1;
+    border-radius: inherit;
+}
+
+#niText {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    text-align: center;
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 25px;
+}
+
+#niTextSmall {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 100%;
+    font-weight: 800;
+    text-align: center;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#lastFH {
+    width: 100%;
+    padding-top: 20px;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+#lastFH>span {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 30px;
+    padding-right: 30px;
+    color: rgb(158, 158, 158);
+    text-align: center;
+}
+
+#emailPart {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#ePInput {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ePInput>input {
+    background-color: rgba(0, 0, 0, 0.541);
+    color: white;
+    border: 1px solid gray;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 500px;
+    font-weight: 700;
+    font-size: 17px;
+    height: 50px;
+    padding-left: 10px;
+}
+
+#ePButton {
+    width: 100%;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+    margin-top: 10px;
+}
+
+#ePButton>button {
+    border: none;
+    height: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    width: 100%;
+    border-radius: 5px;
+}
+
+@media (min-width: 600px) {
+    #emailPart {
+        flex-direction: row;
+        gap: 0;
+        align-items: center;
+        justify-content: center;
+        box-sizing: border-box;
+    }
+
+    #ePInput {
+        flex-grow: 1;
+        padding: 0px;
+        margin-right: 20px;
+        width: 100%;
+        max-width: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #ePButton {
+        padding: 0px;
+        width: 50%;
+        display: flex;
+        align-items: center;
+        margin-top: 0px;
+        justify-content: center;
+    }
+}
+
+#fHPar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+}
+
+@media (min-width: 1280px) {
+    #head {
+        max-width: 1700px;
+    }
+    #netImg>div{
+        height: 500px;
+        font-size: 70px;
+    }
+    #niText {
+        font-size: 50px;
+    }
+
+    #fHPar {
+        max-width: 1400px;
+    }
+}

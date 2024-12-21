@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+    /* Ensures padding and borders are included in width */
+}
+
+#trending {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    /* Prevent horizontal scrolling */
+}
+
+#trending>span {
+    width: 100%;
+    text-align: left;
+    padding: 30px;
+    font-size: 20px;
+    font-weight: 900;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding-bottom: 10px;
+    padding-top: 30px;
+}
+
+.dropdown {
+    border-radius: 20px;
+    border: 1px solid white;
+    display: flex;
+    width: calc(100% - 50px);
+    /* Adjust width to account for margin */
+    align-items: center;
+    justify-content: center;
+    padding: 0px 10px;
+    margin: 0 25px;
+    /* Use shorthand to simplify */
+}
+
+label {
+    width: 20px;
+    overflow: hidden;
+    display: flex;
+}
+
+#locationSelect,
+#moviesList {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    background-color: transparent;
+    color: white;
+    height: 35px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
+option {
+    color: black;
+}
+
+#LocationShow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+}
+
+@media (min-width: 960px) {
+    #trending {
+        padding-left: 65px;
+        padding-right: 65px;
+    }
+
+    #trending>span {
+        padding-left: 0px;
+    }
+
+    #LocationShow {
+        overflow: hidden;
+        flex-direction: row;
+        justify-content: left;
+        gap: 25px;
+        margin-top: 10px;
+    }
+
+    .dropdown {
+        margin: 0px;
+        max-width: 150px;
+    }
+}

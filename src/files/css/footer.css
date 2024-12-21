@@ -1,0 +1,39 @@
+#footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 30px 25px;
+}
+
+#ques {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    width: 100%;
+    text-decoration: underline;
+}
+
+#spans {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    font-weight: 900;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    gap: 15px;
+    padding-top: 40px;
+    text-decoration: underline;
+}
+
+.countre {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+#fHPar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
