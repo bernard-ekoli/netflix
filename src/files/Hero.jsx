@@ -12,14 +12,14 @@ const Hero = () => {
       </div>
       <div id="netImg"
       >
-        {/* <div id="div">
+        <div id="div">
           <div id="niText">
             Unlimited Movies, TV shows, and more
           </div>
           <div id="niTextSmall">
             Starts at N2,200. Cancel anytime
           </div>
-        </div> */}
+        </div>
       </div>
       <div id="lastFH">
         <span>
