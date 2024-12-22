@@ -2,8 +2,6 @@
     box-sizing: border-box;
 }
 
-body {}
-
 #parele {
     padding-top: 30px;
     position: relative;
@@ -41,6 +39,7 @@ body {}
 
 #left,
 #right {
+    cursor: pointer;
     top: 85px;
     border-radius: 30px;
     width: 25px;

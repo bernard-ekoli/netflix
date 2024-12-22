@@ -277,6 +277,7 @@ body {
 }
 
 #gsButton>button {
+    cursor: pointer;
     padding: 10px 28px;
     border-radius: 20px;
     border: none;
@@ -294,8 +295,9 @@ body {
     width: 100%;
     text-align: center;
 }
+
 @media (min-width: 960px) {
-    #mrtjParent{
+    #mrtjParent {
         padding-left: 65px;
         padding-right: 65px;
     }

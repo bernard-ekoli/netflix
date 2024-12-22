@@ -22,6 +22,12 @@
     padding-top: 30px;
 }
 
+label,
+select,
+option {
+    cursor: pointer;
+}
+
 .dropdown {
     border-radius: 20px;
     border: 1px solid white;

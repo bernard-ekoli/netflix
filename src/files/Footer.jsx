@@ -4,10 +4,11 @@ import { useState, useEffect } from 'react';
 const Footer = () => {
   const [location, setLocation] = useState('Loading location...');
   useEffect(() => {
-    fetch('http://ip-api.com/json')
+    fetch('https://ipinfo.io/json?token=2018637cad6420')  // Your IPInfo token
       .then(response => response.json())
       .then(data => {
         const { country } = data;
+        console.log(data)
         setLocation(`${country}`);
       })
       .catch(error => {

@@ -18,7 +18,7 @@
   function loadLoc() {
     let title = document.getElementById('title');
     let locate;
-    fetch('http://ip-api.com/json')
+    fetch('https://ipinfo.io/json?token=2018637cad6420')
       .then(response => response.json())
       .then(data => {
         const { country } = data;

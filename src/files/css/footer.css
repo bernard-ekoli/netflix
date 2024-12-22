@@ -3,6 +3,7 @@
     flex-direction: column;
     width: 100%;
     padding: 30px 25px;
+    max-width: 1400px;
 }
 
 #ques {
@@ -24,6 +25,10 @@
     text-decoration: underline;
 }
 
+#spans>span {
+    cursor: pointer;
+}
+
 .countre {
     text-decoration: none;
     display: block;
@@ -31,9 +36,16 @@
     padding-top: 50px;
     padding-bottom: 50px;
 }
-#fHPar{
+
+#fHPar {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+
+@media (min-width: 1280px) {
+    #footer {
+        padding-left: 90px;
+    }
 }

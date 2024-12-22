@@ -7,12 +7,12 @@ const Trending = () => {
     const [scrolls, setScrolls] = useState(scrollImages);
     const [render, setRender] = useState(true);
     const [location, setLocation] = useState('Loading location...');
-
     useEffect(() => {
-        fetch('http://ip-api.com/json')
+        fetch('https://ipinfo.io/json?token=2018637cad6420')  // Your IPInfo token
             .then(response => response.json())
             .then(data => {
                 const { country } = data;
+                console.log(data)
                 setLocation(`${country}`);
             })
             .catch(error => {
@@ -49,7 +49,7 @@ const Trending = () => {
                 moviesList.appendChild(option2);
                 moviesList.appendChild(option3);
                 moviesList.appendChild(option4);
-                setScrolls(gMovieEng)
+                setScrolls(gMovieEng);
                 setRender(prev => !prev);
             } else {
                 // Update options for local location
@@ -64,7 +64,7 @@ const Trending = () => {
                 moviesList.innerHTML = ''; // Clear previous options
                 moviesList.appendChild(option1);
                 moviesList.appendChild(option2);
-                setScrolls(scrollImages)
+                setScrolls(scrollImages);
                 setRender(prev => !prev);
             }
         });
@@ -93,8 +93,8 @@ const Trending = () => {
                 setRender(prev => !prev);
             }
         });
-
     }, []);
+
 
     return (
         <>
